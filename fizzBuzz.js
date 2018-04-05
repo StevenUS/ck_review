@@ -10,15 +10,15 @@ function fizzBuzz(nums) {
   }
 }
 
-function fizzBuzzMap(nums) {
+var fizzBuzzMap = function (nums) {
   return nums.map(x => {
     if (x % 3 == 0 && x % 5 == 0) {
-      console.log(x + " fizzbuzz");
+      return "fizzbuzz";
     } else if (x % 3 == 0) {
-      console.log(x + " fizz");
+      return "fizz";
     } else if (x % 5 == 0) {
-      console.log(x + " buzz");
-    }
+      return "buzz";
+    } else { return x; }
   })
 }
 
@@ -28,4 +28,4 @@ for (var i = 0; i < 100; i++) {
 }
 
 fizzBuzz(testcase);
-fizzBuzzMap(testcase);
+console.log(fizzBuzzMap(testcase));
