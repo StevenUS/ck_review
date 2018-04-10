@@ -2,7 +2,7 @@ function selectionSort(nums) {
   let swapIdx = 0;
   let minIdx = 0;
   while (swapIdx < nums.length){
-    minIdx = swapIdx
+    minIdx = swapIdx;
     for (let i = swapIdx+1; i < nums.length; i++) {
       if (nums[i] < nums[minIdx]) {
         
@@ -34,7 +34,7 @@ function debugPrint(i, nums, addSpace = false) {
     }
   })
   if (addSpace) {
-    printStr += "\n"
+    printStr += "\n";
   }
   console.log(printStr);
 }

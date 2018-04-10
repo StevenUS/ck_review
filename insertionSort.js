@@ -3,7 +3,7 @@
 
 function insertionSort(nums) {
   for (let i = 1; i < nums.length; i++) {
-    debugPrint(i, nums)
+    debugPrint(i, nums);
     for (let x = i -1; x >= 0; x--) {
       
       if (nums[i] < nums[x]) {
@@ -15,8 +15,8 @@ function insertionSort(nums) {
             }
             else {
               nums[z] = temp;
-              debugPrint(z, nums, true)
-              break
+              debugPrint(z, nums, true);
+              break;
             }
           }
         }
@@ -41,7 +41,7 @@ function debugPrint(i, nums, addSpace = false) {
     }
   })
   if (addSpace) {
-    printStr += "\n"
+    printStr += "\n";
   }
   console.log(printStr);
 }
